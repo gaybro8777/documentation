@@ -6,79 +6,81 @@
 
 ### カテゴリーの作成
 
-新しくカテゴリーを作成するには，画面右上の [New] ボタンをクリックしてください。
+新しくカテゴリーを作成するには，画面右上の「新規」ボタンをクリックしてください。
 
 ![](/assets/media/add-new-category.jpg)
-カテゴリーに名前を設定してください。カテゴリー名は実際に使われる「ファイリングシステム」構造を反映するようなものを付与してください。また，カテゴリー似ついての短い説明も付与してください。
 
-The alias field will be automatically populated from the title field unless manually specified.  This creates the URL path so it should contain hyphens instead of spaces.
+カテゴリーに名前を設定してください。カテゴリー名は実際に使われる「ファイリングシステム」構造を反映するようなものを付けてください。また，カテゴリーに関する短い説明も付与してください。
 
-It is possible to color-code individual categories by either typing in a hex code, or using the picker to select the color.
+手動で指定しない限り，エイリアスフィールドにはタイトルフィールドが自動的に使用されます。URL のパスを生成するため，スペースではなくハイフンを使用してください。
 
-To publish a category and make it available for assigning assets, 'yes' should be highlighted - if the category should not be published click on 'No' to set the category as unpublished.
+16進法のカラーコードを入力したり，カラーピッカーから色を選択することで，個々のカテゴリーを色分けする事が可能です。
 
-To save the changes and continue editing, press 'Apply'.  To save the changes and go back to the categories screen, press 'Save & Close'.  To cancel changes and return to the categories screen, press 'Cancel'
+カテゴリーを公開し，アセットを割り当てて利用できるようにするには，「はい」がハイライトされていなくてはなりません。もし，カテゴリを公開するべきでないなら「いいえ」をハイライトしてください。
 
-### Editing categories
+変更内容を保存し，編集を続けるには「適用」を押してください。設定を保存しカテゴリー画面へ戻るには「保存して閉じる」を押してください。変更をキャンセルしてカテゴリー画面へ戻るには「キャンセル」を押してください。
 
-To edit a category, either click on the category name, or click on the arrow beside the checkbox and select 'edit'.  The same screen as above will be displayed, however the fields which have previously been populated will already have content - which can be edited and saved as above.
+### カテゴリーの編集
 
-### Managing categories
+カテゴリーを編集するには，カテゴリー名をクリックするかチェックボックス横にある矢印をクリックして「編集する」を選択してください。上と同じような画面が表示されます。ただ，フィールドはすでに入力された状態で，上と同じように編集と保存も可能です。
 
-Categories can be sorted by title or ID.  Click on the column header to search by the required field - clicking again will reverse the sort order.
+### カテゴリーの管理
+
+カテゴリーはタイトルか ID でソートできます。カラムのヘッダーをクリックして必要なフィールドで検索ができます。再度クリックする事でソート順を変更できます。
 
 ![](/assets/media/sorting-categories.jpg)
 
-At the bottom of the page, a dropdown allows control over the number of categories displayed per page - if this number is exceeded by the amount of categories, the pagination arrows can be used to move between pages.  To change the number of categories displayed, select the desired number from the dropdown and the page will automatically refresh.
+ページの下部には1ページ毎に表示させるカテゴリーの数をコントロールするドロップダウンがあります。カテゴリー数がこの数超えている場合，ページネーションの矢印でページ間の移動が可能です。表示するカテゴリー数を変更するには，ドロップダウンより好みの数字を選択してください。選択するとページが自動更新されます。
 
-### Deleting categories
+### カテゴリーの削除
 
-Categories can be deleted by clicking on the arrow beside the checkbox and selecting delete.  If any assets are currently assigned to the category being deleted, they will not be removed, but will instead display as 'Unassigned'.  A warning will be displayed which alerts you to this fact when deleting a category.
+カテゴリーはチェックボックス横の矢印をクリックし削除を選択する事で削除ができます。何かしらのアセットがアサインされたカテゴリーを削除した場合，アセットは削除されず，「未割り当て」と表示されます。カテゴリーを削除しようとする時にその旨の警告が表示されます。
 
 ![](/assets/media/delete-categories.jpg)
 
-## Assets
+## アセット
 
-Assets are often provided as incentives to complete a form, and may include white papers, infographics, videos, mp3's and so forth.  These are made available within Mautic as a downloadable file which may be instantly downloaded on submission of a form, or provided as a link from which it can be accessed.
+アセットはフォームを完了させるインセンティブとして提供されます。またアセットはホワイトペーパーやインフォグラフィック，ビデオ，mp3 などを含みます。Mautic 内にダウンロード可能なファイルとして利用されます。これらはフォームの送信完了時にダウンロード，またはアクセス可能なリンクとして提供されます。
 
-Before creating an asset, first establish and publish any categories that may be needed.  It is not possible to assign assets to unpublished categories.
+アセットを作成する前に，はじめに必要になるカテゴリーを作成し公開してください。公開されていないカテゴリーに対しアセットを割り当てる事はできません。
 
-Navigate to 'Components' -> 'Assets', and click 'New' to begin creating an asset.
+「コンポーネント」->「アセット」へ移動し，「新規」をクリックしてアセットを作成してください。
 
 ![](/assets/media/new-asset.jpg)
 
-Assets can be added from local resources on a computer or from a remote location.  Local uploads will be restricted by size due to the settings of your server - any such restriction may be advised as a warning above the file upload area.
+アセットはコンピュータ上にあるローカルのリソースや他の場所にあるリソースを追加できます。ローカルからのアップロードはサーバの設定により制限されている場合があります。どのような制限なのかはアップロード画面に表示される警告が教えてくれます。
 
-### Uploading an asset
+### アセットのアップロード
 
-To upload an asset, either drag the file into the white box, or click in the white box to open a file upload window.  On selection of the file, it will be automatically uploaded and will appear in the white box. 
+アセットをアップロードするにはホワイトボックスへファイルをドラッグしていくか，ホワイトボックスをクリックしてアップロードウィンドウを開いていください。ファイルが選択されるとアップロードは自動で行われ，ホワイトボックスに表示されます。
 
 ![](/assets/media/assign-asset-to-category.jpg)
 
-The title of the asset can be set, along with a description and an alias as above with categories.  Assets can only be assigned to published categories, therefore the dropdown list for category selection will not feature unpublished categories.  It is also possible to set the language, whether the asset is published or unpublished, and whether it should become published or unpublished at a specific date or time.
+アセットのタイトルも設定できます。上のカテゴリーと同じように説明とエイリアスも設定ができます。アセットは公開されたカテゴリーへのみ割り当てができます。したがってカテゴリーのドロップダウンリストの選択は公開されていないカテゴリ内には表示されません。アセットが特定の日時に公開されているか公開されていないかに関わらず言語を設定する事もできます。
 
-When the details have been completed, click 'Save & Close' or 'Apply' to save changes to the asset.
+詳細が設定し終わったら「保存して閉じる」か「反映」をクリックしてアセットへの変更を保存してください。
 
-### Viewing an asset
+###アセットの表示
 
-Once an asset has been uploaded and saved, it can be viewed by clicking on the asset name in the list of assets.
+アセットがアップロードされ，保存されたら，アセットのリストにあるアセット名をクリックする事で表示できます。
 
-![](/assets/media/asset-stats.jpg)
+！[]（/assets/media/asset-stats.jpg）
 
-The view asset screen gives information about the number of times the asset has been downloaded, which can be displayed on a chart by hourly, daily, weekly, monthly or yearly downloads.  The graph also shows the number of unique, versus total views - this is an indication of whether the same asset is being downloaded multiple times by some visitors.
+ビューアセット画面ではアセットのダウンロード数の情報を表示させています。時間ごと・日ごと・週ごと・月ごと・年ごとでの表示が可能です。グラフは合計ビューに対するユニーク数を示しています。これは特定のアセットが複数の訪問者により複数回ダウンロードされているかどうかの指標となります。
 
-A download URL allows previewing of the asset - clicking on the link will open the asset in a new window.
+ダウンロードURLは，アセットのプレビューができます。リンク上でクリックすると新しいウィンドウでアセットを開きます。
 
-Below the preview link will be displayed recent activity for this resource, with a preview of the resource being available beneath the chart for some formats.
+プレビューリンクの下にリソースに関する最近の活動状況を表示します。いくつかのフォーマットで
+プレビューリンクの下にはいくつかのフォーマットのためのチャートの下に利用可能であるリソースのプレビューと、このリソースの最近の活動を表示します。
 
-### Editing an asset
+###アセットの編集
 
-An asset can be edited by clicking on the 'edit' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'edit'.  The edit screens are the same as the view screens, however content will be populated in the fields.
+アセットは，閲覧中に「編集」ボタンを押すか，またはアセットのチェックボックス横にある矢印を選択して「編集」を選ぶことで編集ができます。編集画面はビュー画面と同じですが，コンテンツがフィールドへ入力されています。
 
-### Deleting an asset
+###アセットの削除
 
-An asset can be deleted by clicking on the 'delete' button while viewing the asset, or by selecting the arrow next to the checkbox for the asset, and selecting 'delete'.  A confirmation screen will be displayed, prompting confirmation that the asset should be deleted.
+アセットは，閲覧中に「削除」ボタンを押すか，またはアセットのチェックボックス横にある矢印を選択して「削除」を選ぶことで削除ができます。アセットの削除をすべきかどうかの確認画面が表示されます。
 
-Once an asset has been deleted, it cannot be retrieved, and statistics relating to the number of downloads for that asset will no longer be available.  Contact points that may have been accumulated as a result of accessing the resource will remain. It is recommended where possible to un-publish assets which are no longer in use - in future there may be an archive feature.
+アセットが削除されると取得はできませんし，ダウンロード数などアセットの統計も使用ができなくなります。コンタクトポイントは残るリソースへのアクセスの結果として築得きれるだけとなります。将来的にアーカイブ機能が実装される可能性があるので，今後使わないであろうアセットは可能な限り未公開にしておく事をおお勧めします。
 
 
